@@ -3,18 +3,16 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { HeaderModule } from './header/header.module';
-import { TesteComponent } from './teste/teste.component';
+import { SliderModule } from './slider/slider.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TesteComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    HeaderModule
+    SliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,2 +1,2 @@
-export * from './src/app/header/header.module';
+export * from './src/app/slider/slider.module';
 

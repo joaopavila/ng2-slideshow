@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { HeaderModule } from './header/header.module';
+import { TesteComponent } from './teste/teste.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TesteComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

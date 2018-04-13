@@ -2,7 +2,7 @@
   <ol class="carousel-indicators" [hidden]="slides.length <= 1">
     <li *ngFor="let slidez of slides" [class.active]="slidez.active === true" (click)="select(slidez)"></li>
   </ol>
-  <div class="carousel-inner">
+  <div>
     <ng-content></ng-content>
   </div>
   <a class="left carousel-control" (click)="prev()" [hidden]="!slides.length">

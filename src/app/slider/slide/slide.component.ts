@@ -15,7 +15,7 @@ export class SlideComponent implements OnInit {
   @Input() public active: boolean;
 
   @HostBinding('class.item')
-  @HostBinding('class.carousel-item')
+  // @HostBinding('class.carousel-item')
   private addClass = true;
 
   constructor(private carousel: CarouselComponent) {

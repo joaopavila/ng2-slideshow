@@ -1,85 +1,6 @@
 .carousel {
   position: relative;
 }
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-.carousel-inner ::ng-deep > .item {
-  position: relative;
-  display: none;
-  -webkit-transition: 0.6s ease-in-out left;
-  -o-transition: 0.6s ease-in-out left;
-  transition: 0.6s ease-in-out left;
-}
-.carousel-inner ::ng-deep > .item > img,
-.carousel-inner ::ng-deep > .item > a > img {
-  line-height: 1;
-}
-@media all and (transform-3d), (-webkit-transform-3d) {
-  .carousel-inner ::ng-deep > .item {
-    -webkit-transition: -webkit-transform 0.6s ease-in-out;
-    -o-transition: -o-transform 0.6s ease-in-out;
-    transition: transform 0.6s ease-in-out;
-
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
-  }
-  .carousel-inner ::ng-deep > .item.next,
-  .carousel-inner ::ng-deep > .item.active.right {
-    left: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-  .carousel-inner ::ng-deep > .item.prev,
-  .carousel-inner ::ng-deep > .item.active.left {
-    left: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-  .carousel-inner::ng-deep > .item.next.left,
-  .carousel-inner::ng-deep > .item.prev.right,
-  .carousel-inner::ng-deep > .item.active {
-    left: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-.carousel-inner::ng-deep > .active,
-.carousel-inner::ng-deep > .next,
-.carousel-inner::ng-deep > .prev {
-  display: block;
-}
-.carousel-inner::ng-deep > .active {
-  left: 0;
-}
-.carousel-inner::ng-deep > .next,
-.carousel-inner::ng-deep > .prev {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.carousel-inner::ng-deep > .next {
-  left: 100%;
-}
-.carousel-inner::ng-deep > .prev {
-  left: -100%;
-}
-.carousel-inner::ng-deep > .next.left,
-.carousel-inner::ng-deep > .prev.right {
-  left: 0;
-}
-.carousel-inner::ng-deep > .active.left {
-  left: -100%;
-}
-.carousel-inner::ng-deep > .active.right {
-  left: 100%;
-}
-
-
 
 .carousel-control {
   position: absolute;
@@ -196,7 +117,6 @@
   margin: 0;
   background-color: #fff;
 }
-
 
 @media screen and (min-width: 768px) {
   .carousel-control .glyphicon-chevron-left,

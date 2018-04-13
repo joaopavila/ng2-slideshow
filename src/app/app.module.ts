@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
-import { SliderModule } from './slider/slider.module';
+import { SharedModule } from './shared/shared.module';
+import { CarouselModule } from './carousel/carousel.module';
 
 
 @NgModule({
@@ -12,7 +12,8 @@ import { SliderModule } from './slider/slider.module';
   ],
   imports: [
     BrowserModule,
-    SliderModule
+    CarouselModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

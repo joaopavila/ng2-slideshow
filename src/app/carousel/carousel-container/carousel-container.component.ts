@@ -4,11 +4,11 @@ import { SlideComponent } from '../slide/slide.component';
 export enum Direction {UNKNOWN, NEXT, PREV}
 
 @Component({
-  selector: 'app-carousel',
-  templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss']
+  selector: 'app-carousel-container',
+  templateUrl: './carousel-container.component.html',
+  styleUrls: ['./carousel-container.component.scss']
 })
-export class CarouselComponent {
+export class CarouselContainerComponent {
 
   private slides: Array<SlideComponent> = [];
   private currentInterval: any;

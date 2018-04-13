@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-ng2-carousel',
-  templateUrl: './angular2-carousel.component.html',
-  styleUrls: ['./angular2-carousel.component.scss']
+  templateUrl: './carousel.component.html',
+  styleUrls: ['./carousel.component.scss']
 })
-  export class Angular2CarouselComponent {
+  export class CarouselComponent {
 // The time to show the next photo
   private NextPhotoInterval = 3000;
 // Looping or not

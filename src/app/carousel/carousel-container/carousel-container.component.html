@@ -1,0 +1,18 @@
+<div (mouseenter)="pause()" (mouseleave)="play()" class="carousel slide">
+  <ul class="carousel-indicators" [hidden]="slides.length <= 1">
+    <li class="carousel-indicators__item"
+      *ngFor="let slidez of slides"
+      [class.active]="slidez.active === true"
+      (click)="select(slidez)">
+    </li>
+  </ul>
+
+  <ng-content></ng-content>
+
+  <a class="carousel-control left" (click)="prev()" [hidden]="!slides.length">
+    <
+  </a>
+  <a class="carousel-control right" (click)="next()" [hidden]="!slides.length">
+    >
+  </a>
+</div>

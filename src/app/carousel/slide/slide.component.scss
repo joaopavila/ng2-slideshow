@@ -1,0 +1,17 @@
+.carousel_inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .item {
+    display: none;
+
+    &.text-center {
+      text-align: center;
+    }
+  }
+
+  .active {
+    display: block;
+  }
+}

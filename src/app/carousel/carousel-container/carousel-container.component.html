@@ -9,10 +9,9 @@
 
   <ng-content></ng-content>
 
-  <a class="carousel-control left" (click)="prev()" [hidden]="!slides.length">
-    <
-  </a>
-  <a class="carousel-control right" (click)="next()" [hidden]="!slides.length">
-    >
-  </a>
+  <app-navigation-bar
+    [slides]="slides"
+    (prev)="prev()"
+    (next)="next()"></app-navigation-bar>
+
 </div>

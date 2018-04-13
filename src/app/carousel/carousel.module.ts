@@ -11,6 +11,8 @@ import { CarouselContainerComponent } from './carousel-container/carousel-contai
     CommonModule
   ],
   declarations: [CarouselComponent, CarouselContainerComponent, SlideComponent],
-  exports: [CarouselComponent, CarouselContainerComponent, SlideComponent]
+  exports: [
+    CarouselComponent
+  ]
 })
 export class CarouselModule { }

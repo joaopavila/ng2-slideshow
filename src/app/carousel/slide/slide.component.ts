@@ -15,7 +15,6 @@ export class SlideComponent implements OnInit {
   @Input() public active: boolean;
 
   @HostBinding('class.item')
-  // @HostBinding('class.carousel-item')
   private addClass = true;
 
   constructor(private carousel: CarouselContainerComponent) {
@@ -24,9 +23,5 @@ export class SlideComponent implements OnInit {
   public ngOnInit() {
       this.carousel.addSlide(this);
   }
-
-  // public ngOnDestroy() {
-  //     this.carousel.removeSlide(this);
-  // }
 
 }

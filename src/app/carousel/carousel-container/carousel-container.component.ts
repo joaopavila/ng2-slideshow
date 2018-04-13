@@ -44,7 +44,6 @@ export class CarouselContainerComponent {
       direction = nextIndex > this.getCurrentIndex() ? Direction.NEXT : Direction.PREV;
     }
 
-    // Prevent this user-triggered transition from occurring if there is already one in progress
     if (nextSlide && nextSlide !== this.currentSlide) {
       this.goNext(nextSlide, direction);
     }
@@ -65,7 +64,6 @@ export class CarouselContainerComponent {
 
     this.currentSlide = slide;
 
-    // every time you change slides, reset the timer
     this.restartTimer();
   }
 
@@ -106,7 +104,7 @@ export class CarouselContainerComponent {
 
   private restartTimer() {
     this.resetTimer();
-    let interval = +this.interval;
+    const interval = +this.interval;
     if (!isNaN(interval) && interval > 0) {
       this.currentInterval = setInterval(() => {
         const nInterval = +this.interval;

@@ -10,6 +10,8 @@ import { Component, OnInit, Input } from '@angular/core';
   @Input() photoInterval: Number;
   @Input() loopSlides: boolean;
   @Input() slides: Array<object>;
+  @Input() bulletNavigation: boolean;
+  @Input() styleBulletNavigation: string;
 
   constructor() { }
 

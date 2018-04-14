@@ -10,18 +10,18 @@ export class SlideComponent implements OnInit {
 
   @Input() public index: number;
   @Input() public direction: Direction;
-
-  @HostBinding('class.active')
   @Input() public active: boolean;
 
+  @HostBinding('class.active')
   @HostBinding('class.item')
+
   private addClass = true;
 
   constructor(private carousel: CarouselContainerComponent) {
   }
 
   public ngOnInit() {
-      this.carousel.addSlide(this);
+      this.carousel.createSlide(this);
   }
 
 }

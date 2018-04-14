@@ -1,4 +1,4 @@
-<app-carousel-container [interval]="photoInterval" [noWrap]="!loopSlides">
+<app-carousel-container [interval]="photoInterval" [noWrap]="!loopSlides" [bulletNavigation]="bulletNavigation" [styleBulletNavigation]="styleBulletNavigation">
   <app-slide *ngFor="let slidez of slides; let index=index" [active]="slidez.active">
     <img class="img_slide" [src]="slidez.image">
     <div class="carousel-caption">

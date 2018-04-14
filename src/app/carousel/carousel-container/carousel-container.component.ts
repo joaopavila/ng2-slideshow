@@ -20,6 +20,8 @@ export class CarouselContainerComponent {
   @Input() public noWrap: boolean;
   @Input() public noPause: boolean;
   @Input() public noTransition: boolean;
+  @Input() public bulletNavigation: boolean;
+  @Input() public styleBulletNavigation: string;
 
   @Input() public get interval(): number {
     return this._interval;
@@ -138,7 +140,7 @@ export class CarouselContainerComponent {
     }
   }
 
-  public addSlide(slide: SlideComponent) {
+  public createSlide(slide: SlideComponent) {
     slide.index = this.slides.length;
     this.slides.push(slide);
     if (this.slides.length === 1 || slide.active) {

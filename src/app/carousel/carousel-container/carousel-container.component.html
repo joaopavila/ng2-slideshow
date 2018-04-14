@@ -1,6 +1,7 @@
 <div (mouseenter)="pause()" (mouseleave)="play()" class="carousel slide">
-  <ul class="carousel-indicators" [hidden]="slides.length <= 1">
+  <ul class="carousel-indicators" [hidden]="slides.length <= 1" *ngIf="bulletNavigation">
     <li class="carousel-indicators__item"
+      [ngClass]="styleBulletNavigation ? styleBulletNavigation : 'circle'"
       *ngFor="let slidez of slides"
       [class.active]="slidez.active === true"
       (click)="select(slidez)">

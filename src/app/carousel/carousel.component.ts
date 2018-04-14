@@ -11,6 +11,7 @@ import { Component, OnInit, Input } from '@angular/core';
   @Input() loopSlides: boolean;
   @Input() slides: Array<object>;
   @Input() bulletNavigation: boolean;
+  @Input() textInformation: boolean;
   @Input() styleBulletNavigation: string;
 
   constructor() { }

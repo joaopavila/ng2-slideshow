@@ -1,5 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+interface ISlides {
+  image: string;
+  text: string;
+  active: string;
+}
+
 @Component({
   selector: 'app-ng2-carousel',
   templateUrl: './carousel.component.html',
@@ -9,7 +15,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
   @Input() photoInterval: Number;
   @Input() loopSlides: boolean;
-  @Input() slides: Array<object>;
+  @Input() slides: Array<ISlides>;
   @Input() bulletNavigation: boolean;
   @Input() textInformation: boolean;
   @Input() styleBulletNavigation: string;

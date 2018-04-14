@@ -10,7 +10,7 @@ export enum Direction {UNKNOWN, NEXT, PREV}
 })
 export class CarouselContainerComponent {
 
-  private slides: Array<SlideComponent> = [];
+  public slides: Array<SlideComponent> = [];
   private currentInterval: any;
   private isPlaying: boolean;
   private destroyed = false;

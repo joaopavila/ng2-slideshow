@@ -2,8 +2,10 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  height: inherit;
 
   .item {
+    height: inherit;
     display: none;
 
     &.text-center {

@@ -15,7 +15,7 @@ interface ISlides {
 
   @Input() photoInterval: Number;
   @Input() loopSlides: boolean;
-  @Input() slides: Array<ISlides>;
+  @Input() private slides: Array<ISlides>;
   @Input() bulletNavigation: boolean;
   @Input() textInformation: boolean;
   @Input() styleBulletNavigation: string;

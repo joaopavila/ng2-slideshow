@@ -82,7 +82,7 @@ export class CarouselContainerComponent {
     return !this.currentSlide ? 0 : this.currentSlide.index;
   }
 
-  private next() {
+  public next() {
     const newIndex = (this.getCurrentIndex() + 1) % this.slides.length;
 
     if (newIndex === 0 && this.noWrap) {
@@ -93,7 +93,7 @@ export class CarouselContainerComponent {
     return this.select(this.getSlideByIndex(newIndex), Direction.NEXT);
   }
 
-  private prev() {
+  public prev() {
     const newIndex = this.getCurrentIndex() - 1 < 0 ? this.slides.length - 1 : this.getCurrentIndex() - 1;
 
     if (this.noWrap && newIndex === this.slides.length - 1) {

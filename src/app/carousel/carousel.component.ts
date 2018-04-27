@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-interface ISlides {
+export interface ISlides {
   image: string;
   text: string;
   active: string;
@@ -15,7 +15,7 @@ interface ISlides {
 
   @Input() photoInterval: Number;
   @Input() loopSlides: boolean;
-  @Input() private slides: Array<ISlides>;
+  @Input() slides: Array<ISlides>;
   @Input() bulletNavigation: boolean;
   @Input() textInformation: boolean;
   @Input() styleBulletNavigation: string;

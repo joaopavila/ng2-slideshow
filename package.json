@@ -1,11 +1,11 @@
 {
   "name": "angular2-slideshow",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng-packagr -p ng-package.json && npm publish dist/",
+    "build": "ng build --aot && npm run packagr && npm publish dist/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",

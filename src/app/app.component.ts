@@ -8,6 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 
+  public properties = {
+    photoInterval: 3000,
+    loopSlides: false,
+    bulletNavigation: true,
+    textInformation: false,
+    styleBulletNavigation: 'circle'
+  };
+
   public slides = [
     {image: 'http://www.angulartypescript.com/wp-content/uploads/2016/03/car1.jpg', text: 'BMW 1'},
     {image: 'http://www.angulartypescript.com/wp-content/uploads/2016/03/car2.jpg', text: 'BMW 2'},

@@ -1,10 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-
-export interface ISlides {
-  image: string;
-  text: string;
-  active: string;
-}
+import { Component, Input } from '@angular/core';
+import { IProperties, ISlides } from './properties.interface';
 
 @Component({
   selector: 'app-ng2-carousel',
@@ -13,12 +8,8 @@ export interface ISlides {
 })
   export class CarouselComponent {
 
-  @Input() photoInterval: Number;
-  @Input() loopSlides: boolean;
+  @Input() properties: IProperties;
   @Input() slides: Array<ISlides>;
-  @Input() bulletNavigation: boolean;
-  @Input() textInformation: boolean;
-  @Input() styleBulletNavigation: string;
 
   constructor() { }
 

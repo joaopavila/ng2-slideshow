@@ -1,9 +1,16 @@
-<app-carousel-container [interval]="photoInterval" [noWrap]="!loopSlides" [bulletNavigation]="bulletNavigation" [styleBulletNavigation]="styleBulletNavigation" class="app-carousel-container">
-  <app-slide *ngFor="let slidez of slides; let index=index" [active]="slidez.active" class="app-slide">
-    <img class="img_slide" [src]="slidez.image">
-    <div class="carousel-caption" *ngIf="textInformation">
-      <h3>Slide {{index + 1}}</h3>
-      <p>{{slidez.text}}</p>
-    </div>
-  </app-slide>
+<app-carousel-container
+  [interval]="properties.photoInterval"
+  [noWrap]="!properties.loopSlides"
+  [bulletNavigation]="properties.bulletNavigation"
+  [styleBulletNavigation]="properties.styleBulletNavigation"
+  class="app-carousel-container">
+
+    <app-slide *ngFor="let slidez of slides; let index=index" [active]="slidez.active" class="app-slide">
+      <img class="img_slide" [src]="slidez.image">
+      <div class="carousel-caption" *ngIf="properties.textInformation">
+        <h3>Slide {{index + 1}}</h3>
+        <p>{{slidez.text}}</p>
+      </div>
+    </app-slide>
+
 </app-carousel-container>

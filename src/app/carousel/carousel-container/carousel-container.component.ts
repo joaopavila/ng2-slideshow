@@ -1,4 +1,4 @@
-import {Component, OnDestroy, Input} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SlideComponent } from '../slide/slide.component';
 
 export enum Direction {UNKNOWN, NEXT, PREV}
@@ -27,17 +27,11 @@ export class CarouselContainerComponent {
     return this._interval;
   }
 
-    constructor() {
-         console.log('Carousel created');
-    }
+  constructor() {}
 
   public set interval(value: number) {
     this._interval = value;
     this.restartTimer();
-  }
-
-  public getInstance() {
-    return this;
   }
 
   public select(nextSlide: SlideComponent, direction: Direction = Direction.UNKNOWN) {

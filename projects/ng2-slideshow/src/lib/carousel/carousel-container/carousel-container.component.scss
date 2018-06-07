@@ -1,0 +1,56 @@
+.carousel {
+  position: relative;
+
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    z-index: 15;
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+    list-style: none;
+
+    &__item {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 1px;
+      text-indent: -999px;
+      cursor: pointer;
+      border: 1px solid #fff;
+      margin-right: 5px;
+
+      &.circle {
+        border-radius: 10px;
+
+        &.active {
+          width: 12px;
+        }
+      }
+
+      &.squad_small {
+        border-radius: 0;
+        width: 10px;
+
+        &.active {
+          width: 12px;
+        }
+      }
+
+      &.squad_big {
+        border-radius: 0;
+        width: 100px;
+
+        &.active {
+          width: 102px;
+        }
+      }
+    }
+
+    .active {
+      height: 12px;
+      background-color: #fff;
+    }
+  }
+
+}

@@ -2,26 +2,55 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.5.
 
-## Development server
+## Usage
+Install via npm:
+```shell
+npm install --save-dev angular2-slideshow
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Import in your module
 
-## Code scaffolding
+```ts
+import { CarouselModule } from 'angular2-slideshow';
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+@NgModule({
+  imports: [
+    CarouselModule
+  ]
+})
+```
 
-## Build
+Usage
+```html
+<app-ng2-carousel [slides]="arrayImages" [properties]="properties"></app-ng2-carousel>
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`[slides]` array of images
 
-## Running unit tests
+```ts
+  arrayImages = [
+    {image: 'foto1.jpg'},
+    {image: 'foto2.jpg'},
+    {image: 'foto3.jpg'}
+  ];
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`[properties]` object with carousel features
 
-## Running end-to-end tests
+```ts
+  properties = {
+    photoInterval: 3000, // Timeout of photo change
+    loopSlides: false, // Carousel will be looped in images, getting false, it will stop in the last image
+    bulletNavigation: true, // Enable bullets
+    textInformation: false, // Text with some image information
+    styleBulletNavigation: 'circle' // Bullets style, there are 3, circle, squad and big_squad
+  };
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## LIB Features
+```ts
+  play();
+  pause();
+```
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Hovering the cursor above image will stop transition. Leave the cursor to enable transition again.

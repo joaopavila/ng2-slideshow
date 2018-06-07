@@ -4,7 +4,7 @@ import { SlideComponent } from '../slide/slide.component';
 export enum Direction {UNKNOWN, NEXT, PREV}
 
 @Component({
-  selector: 'app-carousel-container',
+  selector: 'lib-carousel-container',
   templateUrl: './carousel-container.component.html',
   styleUrls: ['./carousel-container.component.scss']
 })

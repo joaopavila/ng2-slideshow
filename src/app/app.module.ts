@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import { CarouselModule } from 'ng2-slideshow';
+import { CarouselModule } from 'angular2-slideshow';
 
 @NgModule({
   declarations: [

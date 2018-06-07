@@ -2,7 +2,7 @@ import { Component, OnInit, Input, HostBinding, OnDestroy } from '@angular/core'
 import { CarouselContainerComponent, Direction } from '../carousel-container/carousel-container.component';
 
 @Component({
-  selector: 'app-slide',
+  selector: 'lib-slide',
   templateUrl: './slide.component.html',
   styleUrls: ['./slide.component.scss']
 })

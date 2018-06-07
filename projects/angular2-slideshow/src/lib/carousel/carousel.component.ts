@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { IProperties, ISlides } from './properties.interface';
 
 @Component({
-  selector: 'app-ng2-carousel',
+  selector: 'lib-ng2-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss']
 })

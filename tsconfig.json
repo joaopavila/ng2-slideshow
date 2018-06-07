@@ -17,10 +17,10 @@
       "dom"
     ],
     "paths": {
-      "ng2-slideshow": [
+      "angular2-slideshow": [
         "dist"
       ],
-      "ng2-slideshow/*": [
+      "angular2-slideshow/*": [
         "dist/*"
       ]
     }

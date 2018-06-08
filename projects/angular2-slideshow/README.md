@@ -22,7 +22,7 @@ import { CarouselModule } from 'angular2-slideshow';
 
 Usage
 ```html
-<app-ng2-carousel [slides]="arrayImages" [properties]="properties"></app-ng2-carousel>
+<lib-ng2-carousel [slides]="arrayImages" [properties]="properties"></lib-ng2-carousel>
 ```
 
 `[slides]` array of images

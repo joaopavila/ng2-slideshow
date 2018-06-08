@@ -10,4 +10,6 @@ export interface ISlides {
   image: string;
   text: string;
   active: string;
+  title: string;
+  rodape: string;
 }
